@@ -13,7 +13,7 @@ class StudentsController < ApplicationController
 
   def create
     @student = Student.new
-   
+    @student.first
     redirect_to post_path(@post)
   end
 
